@@ -1,0 +1,65 @@
+.projects {
+  user-select: none;
+}
+
+.projects .container {
+  overflow: hidden;
+  position: relative;
+}
+
+.projects .container .projects-container {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0, -50%);
+}
+
+.projects .container .projects-container .project {
+  width: 310px;
+  border: 2px solid var(--secondery-color);
+  transition: 0.4s;
+}
+
+.projects .container .projects-container .project:hover {
+  background-color: var(--secondery-color);
+}
+
+.projects .container .projects-container .project img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.projects .container .projects-container .project .text {
+  color: var(--secondery-color);
+  padding: 0 20px;
+}
+
+.projects .container .projects-container .project:hover .text {
+  color: var(--main-color);
+}
+
+.projects .container .projects-container .project .text h1 {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+.projects .container .projects-container .project .text p {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.projects .container .projects-container .project a {
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: 10px;
+  font-size: 30px;
+  color: var(--secondery-color);
+}
+
+.projects .container .projects-container .project:hover a {
+  color: var(--main-color);
+}

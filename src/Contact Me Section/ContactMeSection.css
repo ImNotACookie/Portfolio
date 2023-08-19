@@ -1,0 +1,75 @@
+.contact-me .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  place-content: center;
+  gap: 20px;
+}
+
+.contact-me .container .card {
+  padding: 10px;
+  border: 2px solid var(--secondery-color);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: var(--main-color);
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.contact-me .container .card:hover {
+  transform: scale(1.1);
+}
+
+.contact-me .container .card::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-image: linear-gradient(
+    to top,
+    transparent,
+    var(--secondery-color),
+    transparent
+  );
+  transition: 0.7s;
+}
+
+.contact-me .container .card::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 30px;
+  height: 100%;
+  background-image: linear-gradient(
+    to top,
+    transparent,
+    var(--secondery-color),
+    transparent
+  );
+  transition: 0.7s;
+}
+
+.contact-me .container .card:hover::before {
+  top: 100%;
+}
+
+.contact-me .container .card:hover::after {
+  top: -100%;
+}
+
+.contact-me .container .card img {
+  height: 60px;
+}
+
+.contact-me .container .card a {
+  text-align: center;
+  color: var(--secondery-color);
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  margin-top: 10px;
+}
