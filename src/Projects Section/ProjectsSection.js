@@ -26,6 +26,13 @@ function ProjectsSection() {
       description: "You can also consider my portfolio as a project :)",
       link: "#",
     },
+    {
+      src: "./imgs/Worldpedia.png",
+      alt: "Worldpedia project",
+      title: "Worldpedia",
+      description: "I got the UI/UX from front-end mentor website",
+      link: "https://imnotacookie.github.io/Worldpedia-Using-Rest-Countries-API/",
+    },
   ];
 
   useEffect(() => {
