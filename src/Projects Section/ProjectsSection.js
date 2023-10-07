@@ -52,7 +52,7 @@ function ProjectsSection() {
       if (check) {
         let distanceX = e.clientX - offsetX;
         let newPosition =
-          (distanceX / projectsContainer.clientWidth) * 150 +
+          (distanceX / projectsContainer.clientWidth) * 190 +
           parseFloat(projectsContainer.dataset.prev);
 
         if (newPosition <= -100) {
