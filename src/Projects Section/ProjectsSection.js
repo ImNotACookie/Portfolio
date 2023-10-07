@@ -48,11 +48,11 @@ function ProjectsSection() {
       prevPosition = parseFloat(projectsContainer.dataset.prev);
     }
 
-    function handleMove(e) {
+    function handleMove(e, num = 150) {
       if (check) {
         let distanceX = e.clientX - offsetX;
         let newPosition =
-          (distanceX / projectsContainer.clientWidth) * 190 +
+          (distanceX / projectsContainer.clientWidth) * num +
           parseFloat(projectsContainer.dataset.prev);
 
         if (newPosition <= -100) {
@@ -115,7 +115,7 @@ function ProjectsSection() {
       handleDown(e.changedTouches[0])
     );
     document.addEventListener("touchmove", (e) =>
-      handleMove(e.changedTouches[0])
+      handleMove(e.changedTouches[0], 220)
     );
     document.addEventListener("touchend", (e) => handleUp(e.changedTouches[0]));
     document.addEventListener("wheel", handleWheel);
