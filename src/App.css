@@ -129,6 +129,7 @@ body {
   flex-direction: column;
   height: 100vh;
   height: 100svh;
+  overflow-x: hidden;
   animation: fadeIn 1s;
 }
 
