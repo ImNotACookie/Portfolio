@@ -52,7 +52,7 @@ function ProjectsSection() {
       if (check) {
         let distanceX = e.clientX - offsetX;
         let newPosition =
-          (distanceX / projectsContainer.clientWidth) * 100 +
+          (distanceX / projectsContainer.clientWidth) * 150 +
           parseFloat(projectsContainer.dataset.prev);
 
         if (newPosition <= -100) {
@@ -94,7 +94,7 @@ function ProjectsSection() {
           { duration: 1200, fill: "both" }
         );
       } else if (e.deltaY > 0) {
-        percentage -= 5;
+        percentage -= 7.5;
         if (percentage <= -100) {
           percentage = -100;
         }

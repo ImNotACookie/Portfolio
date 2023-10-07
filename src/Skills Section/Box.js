@@ -9,7 +9,9 @@ function Box(props) {
 
     if (percentage > 50) {
       leftBtn();
-    } else if (percentage < 50) {
+    }
+
+    if (percentage < 50) {
       rightBtn();
     }
   }
